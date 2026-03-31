@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --color-gold: #f3bf70;
+  --color-gold-hover: #8f785c;
+  --color-dark: #1a2d4e;
+  --color-darker: #123254;
+  --color-card: #f8fafc;
+
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: #123254;
+  -webkit-font-smoothing: antialiased;
+}
