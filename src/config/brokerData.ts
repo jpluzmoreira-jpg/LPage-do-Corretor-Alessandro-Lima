@@ -1,6 +1,6 @@
 export const brokerData = {
   // ==========================================
-  // 1. SEO & CONFIGURAÇÕES GERAIS
+  // 1. SEO & CONFIGURAÇÕES GERAIS (Atualizado)
   // ==========================================
   seo: {
     title: "Alessandro Lima | Especialista Imobiliário no Litoral de SC",
