@@ -16,8 +16,9 @@ export function Hero() {
           <video
             autoPlay
             loop
-            muted
+            muted={true}
             playsInline
+            preload="auto"
             className="w-full h-full object-cover"
             poster={hero.backgroundImage}
           >

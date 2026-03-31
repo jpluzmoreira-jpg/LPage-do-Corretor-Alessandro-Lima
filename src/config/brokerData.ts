@@ -61,7 +61,7 @@ export const brokerData = {
     headline: "Invista com Segurança no Litoral que Mais Valoriza no Brasil",
     subheadline: "Descubra as melhores oportunidades em imóveis na planta em Itapema, Porto Belo e Bombinhas.",
     ctaText: "Quero uma Consultoria Gratuita",
-    backgroundVideo: "/video_fundo.mp4", // Faça o upload do arquivo de vídeo na pasta public e renomeie para video_fundo.mp4
+    backgroundVideo: "/video_fundo_final.mp4", // Faça o upload do arquivo de vídeo na pasta public e renomeie para video_fundo.mp4
     backgroundImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   },
 
