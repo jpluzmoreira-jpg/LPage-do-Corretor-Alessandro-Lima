@@ -1,3 +1,16 @@
+import profileImg from '../assets/alessandro_sobre_compressed.jpg';
+import logoSymbolImg from '../assets/logo_al.png';
+import logoFullImg from '../assets/logo_completa.png';
+import bgVideo from '../assets/video_fundo_final.mp4';
+import bombinhasImg from '../assets/bombinhas_compressed.jpg';
+import bombinhas2Img from '../assets/bombinhas2_compressed.jpg';
+import mapaImg from '../assets/mapa-porto-belo_compressed.jpg';
+import portoBeloIaImg from '../assets/porto-belo-ia.jpg';
+import onovoLogo from '../assets/onovo_imobiliario.png';
+import onovoImg from '../assets/onovoalessandro.jpg';
+import fechandoNegocioImg from '../assets/alessandro-fechando-negocio.jpg';
+import contatoImg from '../assets/alessandro_contato_compressed.jpg';
+
 export const brokerData = {
   // ==========================================
   // 1. SEO & CONFIGURAÇÕES GERAIS (Atualizado)
@@ -7,7 +20,7 @@ export const brokerData = {
     description: "Invista com segurança em imóveis na planta em Itapema, Porto Belo e Bombinhas. Consultoria especializada para empresários e famílias.",
     keywords: "investimento imobiliário, porto belo, itapema, bombinhas, santa catarina, imóveis na planta, alessandro lima",
     ogImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Placeholder
-    favicon: `${import.meta.env.BASE_URL}vite.svg`
+    favicon: `/vite.svg`
   },
 
   theme: {
@@ -36,10 +49,10 @@ export const brokerData = {
     linkedin: "https://www.linkedin.com/in/alessandro-lima-ab815097",
     whatsappMessage: "Olá Alessandro! Gostaria de tirar algumas dúvidas sobre investimentos no litoral de SC.",
     // A imagem principal do corretor (Hero e Sobre)
-    profileImage: `${import.meta.env.BASE_URL}alessandro_sobre_compressed.jpg`, // Faça o upload da imagem no explorador de arquivos e coloque o nome aqui (ex: `${import.meta.env.BASE_URL}alessandro_sobre.jpg`)
+    profileImage: profileImg,
     // Logos (se houver, usar links públicos ou caminhos da pasta /public)
-    logoSymbol: `${import.meta.env.BASE_URL}logo_al.png`, // Ex: `${import.meta.env.BASE_URL}logo_alessandro_lima_novo.png`
-    logoFull: `${import.meta.env.BASE_URL}logo_completa.png`,   // Ex: `${import.meta.env.BASE_URL}logo_alessandro_lima_dourado.png`
+    logoSymbol: logoSymbolImg,
+    logoFull: logoFullImg,
     
     bio: {
       title: "Confiança, Credibilidade e Profissionalismo",
@@ -61,7 +74,7 @@ export const brokerData = {
     headline: "Invista com Segurança no Litoral que Mais Valoriza no Brasil",
     subheadline: "Descubra as melhores oportunidades em imóveis na planta em Itapema, Porto Belo e Bombinhas.",
     ctaText: "Quero uma Consultoria Gratuita",
-    backgroundVideo: `${import.meta.env.BASE_URL}video_fundo_final.mp4`, // Faça o upload do arquivo de vídeo na pasta public e renomeie para video_fundo.mp4
+    backgroundVideo: bgVideo,
     backgroundImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
   },
 
@@ -103,8 +116,8 @@ export const brokerData = {
     title: "Conheça esta oportunidade em Bombinhas.",
     description: "Aproveite o mais novo pré-lançamento com condições exclusivas para investidor.",
     images: [
-      `${import.meta.env.BASE_URL}bombinhas_compressed.jpg`,
-      `${import.meta.env.BASE_URL}bombinhas2_compressed.jpg`
+      bombinhasImg,
+      bombinhas2Img
     ],
     ctaText: "Falar com Alessandro no WhatsApp"
   },
@@ -135,15 +148,15 @@ export const brokerData = {
       title: "A Janela de Oportunidade",
       description: "Investir agora significa entrar antes da conclusão destas grandes obras. A valorização imobiliária projetada para os próximos anos criará um cenário de altíssima rentabilidade para os investidores pioneiros."
     },
-    masterplanLink: `${import.meta.env.BASE_URL}masterplan-pereque.pdf`,
+    masterplanLink: `/masterplan-pereque.pdf`,
     images: [
       {
-        url: `${import.meta.env.BASE_URL}mapa-porto-belo_compressed.jpg`,
+        url: mapaImg,
         title: "Masterplan Porto Belo",
         description: "Planejamento urbano e eixos de desenvolvimento"
       },
       {
-        url: `${import.meta.env.BASE_URL}porto-belo-ia.jpg`,
+        url: portoBeloIaImg,
         title: "Alto potencial turístico",
         description: "Turismo e capital chegando a cidade."
       }
@@ -154,10 +167,10 @@ export const brokerData = {
   company: {
     show: true,
     name: "O Novo Imobiliário",
-    logo: `${import.meta.env.BASE_URL}onovo_imobiliario.png`,
+    logo: onovoLogo,
     title: "A Força por Trás dos Seus Investimentos",
     description: "Como seu consultor de confiança, levo até você a inteligência de mercado e as melhores oportunidades da região. Temos acesso antecipado a lançamentos e negociações exclusivas.",
-    image: `${import.meta.env.BASE_URL}onovoalessandro.jpg`,
+    image: onovoImg,
     stats: [
       { value: "1.4 bi", label: "em 2025" },
       { value: "17 lojas", label: "3 fora do Brasil" },
@@ -168,7 +181,7 @@ export const brokerData = {
   // Seção 5.5: Destaques de Investimento (Nova Seção)
   investmentHighlights: {
     show: true,
-    image: `${import.meta.env.BASE_URL}alessandro-fechando-negocio.jpg`,
+    image: fechandoNegocioImg,
     items: [
       {
         text: "Valorização média de 15% ao ano",
@@ -228,7 +241,7 @@ export const brokerData = {
   // Seção 8: Contato (Nova Seção)
   contact: {
     title: "Vamos conversar? Tenho certeza que tenho o empreendimento certo para o seu momento.",
-    image: `${import.meta.env.BASE_URL}alessandro_contato_compressed.jpg`, // Faça o upload da imagem no explorador de arquivos e coloque o nome aqui (ex: `${import.meta.env.BASE_URL}contato_imagem.jpg`)
+    image: contatoImg,
     buttonText: "Enviar Mensagem"
   }
 };
