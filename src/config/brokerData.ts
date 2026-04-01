@@ -20,7 +20,7 @@ export const brokerData = {
     description: "Invista com segurança em imóveis na planta em Itapema, Porto Belo e Bombinhas. Consultoria especializada para empresários e famílias.",
     keywords: "investimento imobiliário, porto belo, itapema, bombinhas, santa catarina, imóveis na planta, alessandro lima",
     ogImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Placeholder
-    favicon: `/vite.svg`
+    favicon: `./vite.svg`
   },
 
   theme: {
@@ -148,7 +148,7 @@ export const brokerData = {
       title: "A Janela de Oportunidade",
       description: "Investir agora significa entrar antes da conclusão destas grandes obras. A valorização imobiliária projetada para os próximos anos criará um cenário de altíssima rentabilidade para os investidores pioneiros."
     },
-    masterplanLink: `/masterplan-pereque.pdf`,
+    masterplanLink: `./masterplan-pereque.pdf`,
     images: [
       {
         url: mapaImg,
