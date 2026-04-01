@@ -29,7 +29,7 @@ export const brokerData = {
     creci: "CRECI em andamento",
     phone: "5545999223545", // Apenas números, com código do país (55) e DDD
     email: "alessandro.santos1405@gmail.com",
-    instagram: "https://www.instagram.com/alessandro.litoralimoveis",
+    instagram: "https://www.instagram.com/alecostaesmeralda/",
     facebook: "https://www.facebook.com/share/17oyPwYPo7/?mibextid=wwXIfr",
     tiktok: "https://www.tiktok.com/@alessandrolimaoficial01?_r=1&_t=ZS-94su6NZBKYH",
     threads: "https://www.threads.com/@alessandro.litoralimoveis?igshid=NTc4MTIwNjQ2YQ==",
