@@ -26,7 +26,7 @@ export function Contact() {
             className="relative h-full min-h-[400px] md:min-h-[600px] rounded-2xl overflow-hidden shadow-2xl"
           >
             {contact.image ? (
-              <img 
+              <img referrerPolicy="no-referrer" 
                 src={contact.image} 
                 alt="Contato" 
                 className="absolute inset-0 w-full h-full object-cover"

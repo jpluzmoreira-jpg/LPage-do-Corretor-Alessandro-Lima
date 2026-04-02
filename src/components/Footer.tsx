@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         <div>
           {broker.logoFull ? (
-            <img src={broker.logoFull} alt={broker.name} className="h-24 w-auto mb-4"  />
+            <img referrerPolicy="no-referrer" src={broker.logoFull} alt={broker.name} className="h-24 w-auto mb-4"  />
           ) : (
             <h2 className="font-display text-3xl font-bold mb-2 text-[#f3bf70]">{broker.name}</h2>
           )}

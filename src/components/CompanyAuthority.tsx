@@ -51,7 +51,7 @@ export const CompanyAuthority: React.FC = () => {
           >
             <div className="aspect-[4/5] lg:aspect-[4/5] rounded-2xl overflow-hidden relative shadow-xl border border-slate-200">
               {company.image ? (
-                <img 
+                <img referrerPolicy="no-referrer" 
                   src={company.image} 
                   alt={company.name}
                   className="w-full h-full object-cover"

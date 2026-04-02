@@ -86,7 +86,7 @@ export function Masterplan() {
           >
             {region.images?.map((img, idx) => (
               <div key={idx} className="relative rounded-3xl overflow-hidden w-full aspect-video shadow-xl group">
-                <img 
+                <img referrerPolicy="no-referrer" 
                   src={img.url} 
                   alt={img.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

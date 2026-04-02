@@ -36,7 +36,7 @@ export const FeaturedProperty: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="w-full md:w-1/2 relative rounded-3xl overflow-hidden shadow-xl aspect-[4/3] group"
             >
-              <img 
+              <img referrerPolicy="no-referrer" 
                 src={img} 
                 alt={`Oportunidade Bombinhas ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -1,14 +1,14 @@
-import profileImg from '../assets/alessandro-sobre.png';
+import profileImg from '../assets/alessandro-sobre.jpg';
 import logoSymbolImg from '../assets/logo_al.png';
 import logoFullImg from '../assets/logo_completa.png';
 import bombinhasImg from '../assets/bombinhas.jpeg';
 import bombinhas2Img from '../assets/bombinhas2.jpeg';
 import mapaImg from '../assets/mapa-porto-belo.jpg';
-import portoBeloIaImg from '../assets/porto-belo-ia.png';
+import portoBeloIaImg from '../assets/porto-belo-ia.jpg';
 import onovoLogo from '../assets/onovo_imobiliario.png';
-import onovoImg from '../assets/onovoalessandro.png';
-import fechandoNegocioImg from '../assets/alessandro-fechando-negocio.png';
-import contatoImg from '../assets/alessandro-telefone.png';
+import onovoImg from '../assets/onovoalessandro.jpg';
+import fechandoNegocioImg from '../assets/alessandro-fechando-negocio.jpg';
+import contatoImg from '../assets/alessandro-telefone.jpg';
 
 export const brokerData = {
   // ==========================================

@@ -30,7 +30,7 @@ export function Testimonials() {
             <p className="text-slate-600 mb-8 italic flex-grow">"{testimonial.text}"</p>
             <div className="flex items-center gap-4 mt-auto">
               {testimonial.image ? (
-                <img 
+                <img referrerPolicy="no-referrer" 
                   src={testimonial.image} 
                   alt={testimonial.name} 
                   className="w-12 h-12 rounded-full object-cover border border-slate-200"

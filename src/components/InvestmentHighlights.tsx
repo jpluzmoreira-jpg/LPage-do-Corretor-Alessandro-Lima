@@ -34,7 +34,7 @@ export const InvestmentHighlights: React.FC = () => {
           >
             <div className="aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden relative shadow-2xl">
               {investmentHighlights.image ? (
-                <img 
+                <img referrerPolicy="no-referrer" 
                   src={investmentHighlights.image} 
                   alt="Fechando negócio"
                   className="w-full h-full object-cover"

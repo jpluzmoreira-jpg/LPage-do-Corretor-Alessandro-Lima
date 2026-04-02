@@ -53,7 +53,7 @@ export function Hero() {
             <source src={hero.backgroundVideo} type="video/mp4" />
           </video>
         ) : hero.backgroundImage ? (
-          <img
+          <img referrerPolicy="no-referrer"
             src={hero.backgroundImage}
             alt="Luxury Real Estate"
             className="w-full h-full object-cover"
@@ -90,7 +90,7 @@ export function Hero() {
           >
             <span className="text-sm tracking-wider uppercase">Associado</span>
             {company.logo ? (
-              <img src={company.logo} alt={company.name} className="h-[72px] w-auto object-contain"  />
+              <img referrerPolicy="no-referrer" src={company.logo} alt={company.name} className="h-[72px] w-auto object-contain"  />
             ) : (
               <span className="text-lg font-display text-gold font-bold">{company.name}</span>
             )}
