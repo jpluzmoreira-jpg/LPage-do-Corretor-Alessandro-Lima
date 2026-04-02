@@ -7,14 +7,9 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   
-  // Configuração dinâmica do base path para GitHub Pages
-  const hasCustomDomain = fs.existsSync('public/CNAME') || fs.existsSync('CNAME');
-  const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
-  const repo = process.env.GITHUB_REPOSITORY;
-  
-  // Se estiver no GitHub Actions e não tiver domínio customizado, usa o nome do repositório
-  // Caso contrário, usa '/' (que funciona perfeitamente no AI Studio e Vercel/Netlify)
-  const basePath = (isGitHubActions && repo && !hasCustomDomain) ? `/${repo.split('/')[1]}/` : '/';
+  // Usa caminhos relativos para garantir que os assets carreguem em qualquer lugar
+  // (GitHub Pages com ou sem domínio customizado, Vercel, Netlify, etc.)
+  const basePath = './';
   
   return {
     base: basePath,
