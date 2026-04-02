@@ -40,7 +40,7 @@ export const FeaturedProperty: React.FC = () => {
                 src={img} 
                 alt={`Oportunidade Bombinhas ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                referrerPolicy="no-referrer"
+                
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
             </motion.div>

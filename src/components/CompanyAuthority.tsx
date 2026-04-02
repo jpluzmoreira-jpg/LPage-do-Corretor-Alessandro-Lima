@@ -55,7 +55,7 @@ export const CompanyAuthority: React.FC = () => {
                   src={company.image} 
                   alt={company.name}
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  
                 />
               ) : null}
               <div className="absolute inset-0 bg-dark/10 mix-blend-multiply" />

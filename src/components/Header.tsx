@@ -23,7 +23,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           {broker.logoSymbol && (
-            <img src={broker.logoSymbol} alt="Logo Alessandro Lima" className="h-12 w-auto object-contain" referrerPolicy="no-referrer" />
+            <img src={broker.logoSymbol} alt="Logo Alessandro Lima" className="h-12 w-auto object-contain"  />
           )}
           <div className="font-display font-bold text-xl md:text-2xl tracking-wider text-white">
             {firstName}<span className="text-[#f3bf70]">{lastName ? ` ${lastName}` : ''}</span>

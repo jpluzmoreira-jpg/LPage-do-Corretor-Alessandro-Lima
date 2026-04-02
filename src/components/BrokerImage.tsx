@@ -28,7 +28,7 @@ export function BrokerImage() {
           transition={{ delay: 1, duration: 1 }}
           src={broker.profileImage || undefined}
           alt={broker.name}
-          referrerPolicy="no-referrer"
+          
           className={`rounded-3xl object-cover aspect-[4/5] w-full transition-all duration-700 border border-white/10 ${!isMobile ? 'grayscale group-hover:grayscale-0' : ''}`}
         />
       </a>

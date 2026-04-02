@@ -34,7 +34,7 @@ export function Testimonials() {
                   src={testimonial.image} 
                   alt={testimonial.name} 
                   className="w-12 h-12 rounded-full object-cover border border-slate-200"
-                  referrerPolicy="no-referrer"
+                  
                 />
               ) : null}
               <div>

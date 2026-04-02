@@ -30,7 +30,7 @@ export function Contact() {
                 src={contact.image} 
                 alt="Contato" 
                 className="absolute inset-0 w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+                
               />
             ) : null}
             <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent"></div>

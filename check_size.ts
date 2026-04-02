@@ -1,3 +1,9 @@
 import fs from 'fs';
-const stats = fs.statSync('public/video_fundo.mp4');
-console.log("File size:", stats.size / 1024 / 1024, "MB");
+import path from 'path';
+
+const dir = 'src/assets';
+const files = fs.readdirSync(dir);
+for (const file of files) {
+  const stat = fs.statSync(path.join(dir, file));
+  console.log(`${file}: ${stat.size} bytes`);
+}

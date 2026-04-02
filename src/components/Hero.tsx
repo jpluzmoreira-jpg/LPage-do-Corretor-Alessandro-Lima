@@ -1,22 +1,50 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { brokerData } from '../config/brokerData';
 
 export function Hero() {
   const { hero, company, broker } = brokerData;
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(e => console.log("Autoplay failed:", e));
+    }
+  }, []);
 
   const message = encodeURIComponent(`Olá ${broker.name}! Gostaria de uma consultoria gratuita para investir no litoral de SC.`);
   const whatsappUrl = `https://wa.me/${broker.phone}?text=${message}`;
+
+  const getYoutubeId = (url: string) => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+  };
+
+  const youtubeId = hero.backgroundVideo ? getYoutubeId(hero.backgroundVideo) : null;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 bg-dark">
       <div className="absolute inset-0 z-0">
         {/* Renderiza o vídeo se existir, senão usa a imagem como fallback */}
-        {hero.backgroundVideo ? (
+        {youtubeId ? (
+          <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${youtubeId}&playsinline=1&rel=0&showinfo=0&modestbranding=1`}
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              style={{ width: '100vw', height: '56.25vw', minHeight: '100vh', minWidth: '177.77vh' }}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ) : hero.backgroundVideo ? (
           <video
+            ref={videoRef}
             autoPlay
             loop
-            muted={true}
+            muted
             playsInline
             preload="auto"
             className="w-full h-full object-cover"
@@ -29,7 +57,7 @@ export function Hero() {
             src={hero.backgroundImage}
             alt="Luxury Real Estate"
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
+            
           />
         ) : null}
         <div className="absolute inset-0 bg-black/60"></div>
@@ -62,7 +90,7 @@ export function Hero() {
           >
             <span className="text-sm tracking-wider uppercase">Associado</span>
             {company.logo ? (
-              <img src={company.logo} alt={company.name} className="h-[72px] w-auto object-contain" referrerPolicy="no-referrer" />
+              <img src={company.logo} alt={company.name} className="h-[72px] w-auto object-contain"  />
             ) : (
               <span className="text-lg font-display text-gold font-bold">{company.name}</span>
             )}

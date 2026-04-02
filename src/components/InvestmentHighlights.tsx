@@ -38,7 +38,7 @@ export const InvestmentHighlights: React.FC = () => {
                   src={investmentHighlights.image} 
                   alt="Fechando negócio"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  
                 />
               ) : null}
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
