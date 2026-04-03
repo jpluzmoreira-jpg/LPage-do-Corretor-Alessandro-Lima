@@ -7,9 +7,12 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   
-  // Usa caminhos relativos para garantir que os assets carreguem em qualquer lugar
-  // (GitHub Pages com ou sem domínio customizado, Vercel, Netlify, etc.)
-  const basePath = './';
+  // Usa o base path injetado pelo GitHub Actions (configure-pages)
+  // Isso resolve automaticamente se é um domínio customizado, página de usuário ou de repositório
+  let basePath = process.env.VITE_BASE_PATH || '/';
+  if (!basePath.endsWith('/')) {
+    basePath += '/';
+  }
   
   return {
     base: basePath,
